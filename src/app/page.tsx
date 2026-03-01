@@ -18,19 +18,19 @@ function HeroSection() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
-  return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <motion.div style={{ y }} className="absolute inset-0">
-          <Image
-            src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=1920&q=80"
-            alt="Luxury roasted makhana"
-            fill
-            className="object-cover"
-            priority
-          />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold/10 via-transparent to-transparent" />
-      </motion.div>
+    return (
+      <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <motion.div style={{ y }} className="absolute inset-0">
+                <Image
+                  src="https://images.unsplash.com/photo-1599481238640-4c1288750d7a?w=1920&q=80"
+                  alt="Luxury roasted makhana backdrop"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold/20 via-transparent to-transparent" />
+        </motion.div>
 
       <motion.div style={{ opacity }} className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <motion.div
@@ -407,44 +407,77 @@ function RecipesPreview() {
   );
 }
 
-function NewsletterSection() {
-  return (
-    <section className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0">
-        <Image
-          src="https://images.unsplash.com/photo-1542204625-ca960ca44635?w=1920&q=80"
-          alt="Luxury background"
-          fill
-          className="object-cover opacity-20"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black" />
-      </div>
+function ShoppingPlatformsSection() {
+  const platforms = [
+    {
+      name: "Amazon",
+      icon: (
+        <svg viewBox="0 0 24 24" className="h-8 w-8 fill-current">
+          <path d="M15.93 17.13c-1.47.81-2.04.99-3.81.99-1.63 0-2.37-.14-3.37-.62-.51-.24-.9-.55-1.16-.94-.26-.39-.39-.85-.39-1.37 0-.52.13-1.01.39-1.47.26-.46.61-.83 1.05-1.12.44-.29.98-.5 1.62-.63.64-.13 1.4-.2 2.27-.2h1.41v-.43c0-.36-.05-.7-.14-1.01-.09-.31-.22-.59-.39-.84-.17-.25-.39-.45-.66-.59-.27-.14-.59-.21-.96-.21-.36 0-.68.07-.96.21-.28.14-.52.33-.7.58s-.33.53-.41.83c-.08.31-.13.62-.13.92h-2.1c.01-.58.1-1.14.28-1.68.18-.54.44-1.03.78-1.47.34-.44.76-.8 1.25-1.08.49-.28 1.05-.42 1.68-.42.66 0 1.26.15 1.79.44.53.29.97.68 1.32 1.16.35.48.61 1.03.78 1.65.17.62.25 1.28.25 1.99v3.1c0 .54.07 1.05.21 1.53.14.48.33.92.58 1.32l-.93.26c-.19-.34-.33-.72-.42-1.13zm-1.54-3.52c-.59 0-1.1.05-1.53.15-.43.1-.8.25-1.1.45-.3.2-.53.45-.69.75-.16.3-.24.64-.24 1.02 0 .34.07.65.21.92.14.27.34.5.59.68.25.18.54.31.87.39.33.08.69.12 1.08.12.56 0 1.07-.09 1.51-.27.44-.18.82-.44 1.13-.77.31-.33.54-.73.69-1.19.15-.46.22-.96.22-1.5v-.75h-1.74zm4.4 5.37c-1.54 1.33-3.69 2.14-6.11 2.14-2.88 0-5.38-1.14-7.14-2.98l.61-.53c1.61 1.71 3.93 2.77 6.53 2.77 2.13 0 4.04-.73 5.48-1.95l.63.55zm.6-1.04l-.53-.59.73-.59 1.24 1.33-1.66 1.04-.33-.66.55-.53z" />
+        </svg>
+      ),
+      url: "https://www.amazon.in",
+      color: "hover:text-[#FF9900]",
+    },
+    {
+      name: "Flipkart",
+      icon: (
+        <span className="text-2xl font-bold italic">F<span className="text-gold">!</span></span>
+      ),
+      url: "https://www.flipkart.com",
+      color: "hover:text-[#2874F0]",
+    },
+    {
+      name: "Meesho",
+      icon: (
+        <span className="text-2xl font-bold">M</span>
+      ),
+      url: "https://www.meesho.com",
+      color: "hover:text-[#F43397]",
+    },
+  ];
 
+  return (
+    <section className="py-24 relative overflow-hidden bg-charcoal">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gold/5 via-transparent to-transparent" />
+      
       <div className="relative max-w-4xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="space-y-6"
+          className="space-y-12"
         >
-          <Crown className="h-12 w-12 text-gold mx-auto" />
-          <h2 className="text-4xl md:text-5xl font-serif text-cream">
-            Join the <span className="gold-text-gradient">Inner Circle</span>
-          </h2>
-          <p className="text-cream/60 max-w-xl mx-auto">
-            Subscribe to receive exclusive access to limited editions, private tastings, 
-            and members-only offers.
-          </p>
-          <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-6 py-4 rounded-full bg-black/50 border border-gold/30 text-cream placeholder:text-cream/40 focus:outline-none focus:border-gold"
-            />
-            <Button className="bg-gold text-black hover:bg-gold/90 px-8 py-4 rounded-full">
-              Subscribe
-            </Button>
-          </form>
+          <div className="space-y-4">
+            <h2 className="text-4xl md:text-5xl font-serif text-cream">
+              Find us on your <span className="gold-text-gradient">Shopping Platform</span>
+            </h2>
+            <p className="text-cream/60 max-w-xl mx-auto">
+              Our premium lotus seeds are available across major e-commerce destinations. 
+              Click below to shop from your preferred store.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+            {platforms.map((platform, index) => (
+              <motion.a
+                key={platform.name}
+                href={platform.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className={`flex flex-col items-center gap-3 text-cream/50 transition-all duration-300 ${platform.color} group`}
+              >
+                <div className="w-16 h-16 rounded-2xl border border-gold/10 bg-black/50 flex items-center justify-center group-hover:border-gold/40 group-hover:bg-gold/5 transition-all">
+                  {platform.icon}
+                </div>
+                <span className="text-sm tracking-[0.2em] uppercase font-medium">{platform.name}</span>
+              </motion.a>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>
@@ -460,7 +493,7 @@ export default function HomePage() {
       <FeaturedProducts />
       <TestimonialsSection />
       <RecipesPreview />
-      <NewsletterSection />
+      <ShoppingPlatformsSection />
     </main>
   );
 }
