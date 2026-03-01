@@ -21,13 +21,13 @@ function HeroSection() {
   return (
     <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <motion.div style={{ y }} className="absolute inset-0">
-        <Image
-          src="https://images.unsplash.com/photo-1628102472305-6ec032f3c716?w=1920&q=80"
-          alt="Luxury roasted makhana"
-          fill
-          className="object-cover"
-          priority
-        />
+          <Image
+            src="https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=1920&q=80"
+            alt="Luxury roasted makhana"
+            fill
+            className="object-cover"
+            priority
+          />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold/10 via-transparent to-transparent" />
       </motion.div>

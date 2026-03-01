@@ -182,11 +182,13 @@ export default function CartPage() {
                   </div>
 
                   <Button
-                    onClick={handleCheckout}
+                    asChild
                     className="w-full bg-gold text-black hover:bg-gold/90 py-6 text-lg"
                   >
-                    Proceed to Checkout
-                    <ArrowRight className="h-5 w-5 ml-2" />
+                    <Link href="/checkout/razorpay">
+                      Proceed to Checkout
+                      <ArrowRight className="h-5 w-5 ml-2" />
+                    </Link>
                   </Button>
                 </div>
 

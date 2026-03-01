@@ -20,10 +20,12 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  turbopack: {
-    rules: {
-      "*.{jsx,tsx}": {
-        loaders: [LOADER]
+  experimental: {
+    turbo: {
+      rules: {
+        "*.{jsx,tsx}": {
+          loaders: [LOADER]
+        }
       }
     }
   }
