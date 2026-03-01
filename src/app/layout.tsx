@@ -6,8 +6,8 @@ import Script from "next/script";
 import { Providers } from "@/components/Providers";
 
 export const metadata: Metadata = {
-  title: "LUXE | Artisan Delicacies",
-  description: "Curating the world's finest gourmet delicacies. Premium chocolates, rare caviar, truffles, and more.",
+  title: "Shriyans | Premium Lotus Seeds",
+  description: "Exquisite roasted flavored makhana (fox nuts) from the heart of Mithila. Savor the royalty of the golden grain.",
 };
 
 export default function RootLayout({

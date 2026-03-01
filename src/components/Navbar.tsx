@@ -58,7 +58,7 @@ export function Navbar() {
                 <div className="flex flex-col h-full">
                   <div className="flex items-center gap-2 mb-8 mt-4">
                     <Crown className="h-8 w-8 text-gold" />
-                    <span className="text-2xl font-serif text-gold">LUXE</span>
+                    <span className="text-2xl font-serif text-gold">Shriyans</span>
                   </div>
                   <nav className="flex flex-col gap-2">
                     {navLinks.map((link) => (
@@ -97,10 +97,10 @@ export function Navbar() {
               </motion.div>
               <div className="hidden sm:block">
                 <h1 className="text-2xl lg:text-3xl font-serif tracking-[0.2em] text-gold">
-                  LUXE
+                  Shriyans
                 </h1>
                 <p className="text-[10px] tracking-[0.3em] text-gold/60 uppercase">
-                  Artisan Delicacies
+                  Premium Lotus Seeds
                 </p>
               </div>
             </Link>

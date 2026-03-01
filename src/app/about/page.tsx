@@ -2,62 +2,62 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Crown, Award, Globe, Users, Heart, Leaf, Gem, History } from "lucide-react";
+import { Crown, Award, Globe, Users, Heart, Leaf, Gem, History, Sparkles } from "lucide-react";
 
 const milestones = [
-  { year: "1892", title: "Founded in Paris", description: "Established as a small confectionery" },
-  { year: "1924", title: "Royal Warrant", description: "Appointed to European royalty" },
-  { year: "1956", title: "Global Expansion", description: "Opened boutiques worldwide" },
-  { year: "1989", title: "Artisan Revival", description: "Returned to handcrafted traditions" },
-  { year: "2024", title: "Digital Excellence", description: "Bringing luxury to your doorstep" },
+  { year: "1985", title: "Roots in Mithila", description: "The Shriyans family began cultivating premium lotus seeds in Bihar's fertile wetlands." },
+  { year: "2005", title: "The Golden Grain", description: "First local processing unit established to ensure artisanal quality control." },
+  { year: "2015", title: "Gourmet Innovation", description: "Launched our first line of luxury roasted flavored makhana." },
+  { year: "2020", title: "Global Recognition", description: "Awarded for excellence in sustainable snack innovation." },
+  { year: "2026", title: "The Royal Era", description: "Launching Shriyans as the global benchmark for luxury lotus seeds." },
 ];
 
 const values = [
   {
-    icon: Gem,
-    title: "Uncompromising Quality",
+    icon: Crown,
+    title: "Heritage Quality",
     description:
-      "Every product is meticulously sourced from the world's finest producers and undergoes rigorous quality control.",
+      "We source only the largest, whitest, and most premium 'Dhire' makhana, a grade reserved for royalty.",
   },
   {
-    icon: Heart,
-    title: "Passionate Craftsmanship",
+    icon: Sparkles,
+    title: "Artisanal Perfection",
     description:
-      "Our artisans dedicate their lives to perfecting the art of gourmet delicacies, with techniques passed down through generations.",
+      "Every seed is hand-sorted and slow-roasted in small batches to achieve the perfect, delicate crunch.",
   },
   {
     icon: Leaf,
-    title: "Sustainable Luxury",
+    title: "Ethically Harvested",
     description:
-      "We partner with ethical producers who share our commitment to environmental responsibility and fair trade practices.",
+      "Our sustainable farming practices protect the delicate ecosystem of Mithila's lotus ponds and support local harvesters.",
   },
   {
-    icon: Users,
-    title: "Customer Excellence",
+    icon: Heart,
+    title: "Modern Gourmet",
     description:
-      "Every patron receives personalized service worthy of royalty, from selection to white-glove delivery.",
+      "We blend traditional techniques with global luxury flavors like Italian truffle and Belgian chocolate.",
   },
 ];
 
 const team = [
   {
-    name: "Charles Beaumont",
-    role: "Master Chocolatier",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+    name: "Rajesh Shriyans",
+    role: "Founder & Master Roaster",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
   },
   {
-    name: "Isabella Romano",
-    role: "Head of Procurement",
+    name: "Meera Singh",
+    role: "Head of Flavor Innovation",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
   },
   {
-    name: "Jean-Pierre Laurent",
-    role: "Executive Chef",
+    name: "Anil Kumar",
+    role: "Sustainable Farming Lead",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
   },
   {
-    name: "Sophie Chen",
-    role: "Tea Sommelier",
+    name: "Priya Das",
+    role: "Quality Assurance Expert",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
   },
 ];
@@ -68,8 +68,8 @@ export default function AboutPage() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80"
-            alt="Luxury interior"
+            src="https://images.unsplash.com/photo-1628102472305-6ec032f3c716?w=1920&q=80"
+            alt="Lotus seed harvest"
             fill
             className="object-cover opacity-30"
           />
@@ -83,13 +83,13 @@ export default function AboutPage() {
             className="space-y-6"
           >
             <Crown className="h-16 w-16 text-gold mx-auto" />
-            <p className="text-gold/60 uppercase tracking-[0.3em] text-sm">Est. 1892</p>
+            <p className="text-gold/60 uppercase tracking-[0.3em] text-sm">Est. 1985</p>
             <h1 className="text-5xl md:text-6xl font-serif text-cream">
-              The Art of <span className="gold-text-gradient">Luxury</span>
+              The Legacy of <span className="gold-text-gradient">Shriyans</span>
             </h1>
             <p className="text-xl text-cream/60 max-w-2xl mx-auto leading-relaxed">
-              For over a century, LUXE has been the world&apos;s premier destination for 
-              exceptional gourmet delicacies, serving royalty, celebrities, and connoisseurs alike.
+              From the serene ponds of Mithila to the world&apos;s most sophisticated tables, 
+              we bring you the purest expression of nature&apos;s most versatile superfood.
             </p>
           </motion.div>
         </div>
@@ -106,16 +106,16 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&q=80"
-                    alt="Artisan crafting"
+                    src="https://images.unsplash.com/photo-1621262451369-0260f8625907?w=800&q=80"
+                    alt="Artisanal makhana roasting"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="absolute -bottom-8 -right-8 w-48 h-48 rounded-2xl overflow-hidden border-4 border-black">
                   <Image
-                    src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400&q=80"
-                    alt="Chocolate"
+                    src="https://images.unsplash.com/photo-1628102472305-6ec032f3c716?w=400&q=80"
+                    alt="Premium lotus seeds"
                     fill
                     className="object-cover"
                   />
@@ -131,20 +131,21 @@ export default function AboutPage() {
             >
               <p className="text-gold/60 uppercase tracking-[0.3em] text-sm">Our Story</p>
               <h2 className="text-4xl font-serif text-cream">
-                A Legacy of <span className="gold-text-gradient">Excellence</span>
+                Nurturing the <span className="gold-text-gradient">Golden Grain</span>
               </h2>
               <p className="text-cream/70 leading-relaxed">
-                Founded in 1892 in the heart of Paris by master confectioner François Beaumont, 
-                LUXE began as a small artisan shop catering to the discerning tastes of Parisian aristocracy.
+                Shriyans Lotus Seeds began in the heart of Bihar, where our family has cultivated 
+                the finest fox nuts for generations. We realized that this humble superfood, 
+                blessed by nature and steeped in tradition, deserved a place on the world stage.
               </p>
               <p className="text-cream/70 leading-relaxed">
-                What started as a passion for perfection quickly grew into an internationally 
-                renowned house of luxury delicacies. Our commitment to sourcing only the finest 
-                ingredients from around the world has remained unchanged for over 130 years.
+                Our mission is to transform the snacking experience by combining the nutritional 
+                powerhouse of makhana with the most exquisite global flavors. We believe that 
+                luxury should be healthy, and tradition should be innovative.
               </p>
               <p className="text-cream/70 leading-relaxed">
-                Today, we continue the Beaumont family tradition, bringing the same dedication 
-                to craftsmanship and excellence that has made LUXE synonymous with luxury.
+                Today, Shriyans stands as a symbol of artisanal quality and royal taste, 
+                connecting the hardworking farmers of Mithila with the global gourmet community.
               </p>
             </motion.div>
           </div>
@@ -156,7 +157,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <p className="text-gold/60 uppercase tracking-[0.3em] text-sm mb-4">Our Journey</p>
             <h2 className="text-4xl font-serif text-cream">
-              Through the <span className="gold-text-gradient">Years</span>
+              Roots of <span className="gold-text-gradient">Tradition</span>
             </h2>
           </div>
 
@@ -195,7 +196,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <p className="text-gold/60 uppercase tracking-[0.3em] text-sm mb-4">Our Philosophy</p>
             <h2 className="text-4xl font-serif text-cream">
-              What We <span className="gold-text-gradient">Stand For</span>
+              The Shriyans <span className="gold-text-gradient">Way</span>
             </h2>
           </div>
 
@@ -225,7 +226,7 @@ export default function AboutPage() {
           <div className="text-center mb-16">
             <p className="text-gold/60 uppercase tracking-[0.3em] text-sm mb-4">Meet the Team</p>
             <h2 className="text-4xl font-serif text-cream">
-              Our <span className="gold-text-gradient">Artisans</span>
+              Guardians of the <span className="gold-text-gradient">Grain</span>
             </h2>
           </div>
 
@@ -262,9 +263,9 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
-              { value: "130+", label: "Years of Excellence" },
-              { value: "50+", label: "Countries Served" },
-              { value: "1M+", label: "Happy Customers" },
+              { value: "40+", label: "Years of Heritage" },
+              { value: "500+", label: "Farmer Families Supported" },
+              { value: "100%", label: "Natural & Preservative Free" },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}

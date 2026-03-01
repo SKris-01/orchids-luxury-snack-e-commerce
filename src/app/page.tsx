@@ -22,8 +22,8 @@ function HeroSection() {
     <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <motion.div style={{ y }} className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=1920&q=80"
-          alt="Luxury chocolates"
+          src="https://images.unsplash.com/photo-1628102472305-6ec032f3c716?w=1920&q=80"
+          alt="Luxury roasted makhana"
           fill
           className="object-cover"
           priority
@@ -40,7 +40,7 @@ function HeroSection() {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-black/30 backdrop-blur-sm mb-8"
         >
           <Sparkles className="h-4 w-4 text-gold" />
-          <span className="text-sm text-gold/80 tracking-wider">Artisan Excellence Since 1892</span>
+          <span className="text-sm text-gold/80 tracking-wider">Shriyans: The Golden Grain of Mithila</span>
         </motion.div>
 
         <motion.h1
@@ -49,9 +49,9 @@ function HeroSection() {
           transition={{ duration: 1, delay: 0.4 }}
           className="text-5xl md:text-7xl lg:text-8xl font-serif mb-6"
         >
-          <span className="text-cream">The Art of</span>
+          <span className="text-cream">Exquisite Roasted</span>
           <br />
-          <span className="gold-text-gradient">Luxury Indulgence</span>
+          <span className="gold-text-gradient">Lotus Seeds</span>
         </motion.h1>
 
         <motion.p
@@ -60,8 +60,8 @@ function HeroSection() {
           transition={{ duration: 1, delay: 0.6 }}
           className="text-lg md:text-xl text-cream/70 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Discover the world&apos;s most exquisite gourmet delicacies, handcrafted by master artisans 
-          and sourced from the finest origins across the globe.
+          Savor the crunch of royalty. Our hand-picked, slow-roasted flavored makhana 
+          brings the ancient heritage of Mithila to your modern gourmet palate.
         </motion.p>
 
         <motion.div
@@ -105,28 +105,28 @@ function HeroSection() {
 }
 
 function FeaturesSection() {
-  const features = [
-    {
-      icon: Crown,
-      title: "Premium Selection",
-      description: "Hand-picked from the world's finest producers",
-    },
-    {
-      icon: Truck,
-      title: "White Glove Delivery",
-      description: "Temperature-controlled luxury shipping",
-    },
-    {
-      icon: Shield,
-      title: "Quality Guaranteed",
-      description: "100% satisfaction or money back",
-    },
-    {
-      icon: Award,
-      title: "Award Winning",
-      description: "Recognized excellence since 1892",
-    },
-  ];
+    const features = [
+      {
+        icon: Crown,
+        title: "Royal Heritage",
+        description: "Authentic lotus seeds from the heart of Mithila",
+      },
+      {
+        icon: Sparkles,
+        title: "Artisanal Roasting",
+        description: "Slow-roasted in small batches with pure ghee",
+      },
+      {
+        icon: Shield,
+        title: "Purity Promised",
+        description: "No preservatives, artificial colors or MSG",
+      },
+      {
+        icon: Award,
+        title: "Luxury Quality",
+        description: "Export-grade makhana for the global connoisseur",
+      },
+    ];
 
   return (
     <section className="py-20 bg-charcoal border-y border-gold/10">
@@ -253,29 +253,29 @@ function FeaturedProducts() {
 }
 
 function TestimonialsSection() {
-  const testimonials = [
-    {
-      name: "Victoria Sterling",
-      role: "Culinary Critic",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
-      content: "LUXE has redefined what luxury snacking means. Their Belgian truffles are nothing short of perfection.",
-      rating: 5,
-    },
-    {
-      name: "James Montgomery",
-      role: "Michelin Star Chef",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
-      content: "The Alba truffles from LUXE are the finest I've ever worked with. Impeccable quality and service.",
-      rating: 5,
-    },
-    {
-      name: "Elizabeth Crown",
-      role: "Food Connoisseur",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
-      content: "From caviar to rare teas, every product exceeds expectations. A truly royal experience.",
-      rating: 5,
-    },
-  ];
+    const testimonials = [
+      {
+        name: "Aditi Sharma",
+        role: "Wellness Coach",
+        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+        content: "Shriyans Lotus Seeds are my favorite healthy luxury. The Truffle & Parmesan flavor is absolutely addictive!",
+        rating: 5,
+      },
+      {
+        name: "Vikram Mehta",
+        role: "Gourmet Enthusiast",
+        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
+        content: "I've tried many makhana brands, but the quality and crunch of Shriyans are in a league of their own. Truly royal.",
+        rating: 5,
+      },
+      {
+        name: "Sonia Kapoor",
+        role: "Lifestyle Blogger",
+        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+        content: "The packaging is as beautiful as the taste. Their gift hampers are my go-to for festive gifting.",
+        rating: 5,
+      },
+    ];
 
   return (
     <section className="py-24 relative">

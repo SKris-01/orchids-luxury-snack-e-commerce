@@ -81,16 +81,16 @@ function ProductsContent() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-12"
         >
-          <p className="text-gold/60 uppercase tracking-[0.3em] text-sm mb-4">
-            Our Collection
-          </p>
-          <h1 className="text-4xl md:text-5xl font-serif text-cream mb-4">
-            Luxury <span className="gold-text-gradient">Delicacies</span>
-          </h1>
-          <p className="text-cream/60 max-w-2xl">
-            Explore our curated selection of the world&apos;s finest gourmet products, 
-            sourced from prestigious artisans across the globe.
-          </p>
+            <p className="text-gold/60 uppercase tracking-[0.3em] text-sm mb-4">
+              Our Collection
+            </p>
+            <h1 className="text-4xl md:text-5xl font-serif text-cream mb-4">
+              Royal <span className="gold-text-gradient">Makhana</span>
+            </h1>
+            <p className="text-cream/60 max-w-2xl">
+              Discover the finest collection of hand-picked, slow-roasted lotus seeds. 
+              Infused with gourmet global flavors and the heritage of Mithila.
+            </p>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-8">
